@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Permanent+Marker');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Permanent Marker", serif;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-shadow: 4px 4px 8px rgb(0, 14, 255);
+  color: white;
+  font-size: 5rem;
+  line-height: 100%;
+}
+
+p {
+  font-family: "Roboto", serif;
+  color: white;
+  font-size: 1rem;
+  line-height: 100%;
+}
+
+.sidebar {
+  background-color: #333;
+  height: 100%;
+  width: 120px;
+  position: fixed!important;
+  z-index: 1;
+  overflow: auto;
+}
+
+.fa {
+  font-size: 60px;
+  text-align: center;
+  color: white;
+  text-shadow: 4px 4px 8px rgb(0, 14, 255);
+}
+
+.sidebar a {
+  /*float: left;*/
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  */ text-decoration: none;
+}
+
+.sidebar a:hover {
+  background-color: #000;
+  color: white;
+}
+
+.sidebar img {
+  /*float: left;*/
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  opacity: 0.3;
+  width: 100%;
+}
+
+.column {
+  /*float: left;*/
+  width: 50%;
+  /*padding: 15px;*/
+}
+
+.column.left {
+  float: left;
+  width: 5%;
+}
+
+.column.right {
+  float: right;
+  width: 95%;
+  padding-left: 100px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
